@@ -1,0 +1,126 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #9400D3;
+}
+
+header {
+    background-color: #1a1a3d;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+#transaction-form, #summary, #charts, #yearly-chart {
+    margin: 20px 0;
+    padding: 15px;
+    background: black;
+    border-radius: 8px;
+    border: 3px solid #9400D3;
+    box-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #9400D3;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#add-button {
+    background-color: #2B2E1D;
+    color: #9400D3;
+    border: none;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background-color: #b0c9cd;
+} 
+
+#actions button {
+    padding: 10px 20px;
+    background-color: #2B2E1D;
+    color: #9400D3;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#actions button:hover {
+    background-color: #b0c9cd;
+}
+
+canvas {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    #summary div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Add dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #333;
+}
+
+body.dark-mode #transaction-form, 
+body.dark-mode #summary, 
+body.dark-mode #charts, 
+body.dark-mode #yearly-chart {
+    background: #1e1e1e;
+    border-color: #6200ea;
+}
+
+body.dark-mode form input, 
+body.dark-mode form select, 
+body.dark-mode form button {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #6200ea;
+}
+
+body.dark-mode #add-button, 
+body.dark-mode #actions button {
+    background-color: #333;
+    color: #6200ea;
+}
+
+body.dark-mode #add-button:hover, 
+body.dark-mode #actions button:hover {
+    background-color: #444;
+}
